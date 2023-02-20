@@ -24,3 +24,8 @@ sample:
     line-height: 19px;
     padding-block: 10px;
 }
+//make the bulletpoint into different color and change the size of it
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+}
