@@ -1,0 +1,26 @@
+import React from "react"
+import ReactDOM from "react-dom"
+import App from "./App"
+
+Import whatever it is needed, import other "files" if you want to reference them in this file
+
+ sample of a method getting exported:
+ 
+ export default function Main() {
+    return<div> 
+     <h1>Hellow World</h1>
+    <ul>
+    </ul>
+     </div>
+}
+
+Sample of referencing it:
+ReactDOM.render(<Main />, document.getElementById("root"))
+
+CSS tips:
+padding space: space out between lines
+sample: 
+.main--facts > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
