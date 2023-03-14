@@ -55,3 +55,5 @@ function App() {
 }
 
 ReactDOM.render(<App />, document.getElementById("root"))
+
+不要让你的情绪左右你的学习。当你学到了一定程度获得了一定的成就，那这些正能量就会反馈给你形成自循环。
