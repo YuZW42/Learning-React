@@ -59,3 +59,27 @@ ReactDOM.render(<App />, document.getElementById("root"))
 不要让你的情绪左右你的学习。当你学到了一定程度获得了一定的成就，那这些正能量就会反馈给你形成自循环。
 我之所以没有考上清华，并不是因为我高考没有认真考。而是我的学历水平本身就上不了清华。多年以后我会后悔当初没有好好学习，但是回顾当时，也确实没有办法能提高自己的高考成绩.
 红中老大耍的好啊  颠在都市
+
+3/31 useState
+import React from "react"
+
+export default function App() {
+    const [count, setCount] = React.useState(0)
+    function add() {
+        setCount(prevCount => prevCount + 1)
+    }
+    function subtract() {
+        setCount(prevCount => prevCount - 1)
+    } //this is the way to get the old value
+    
+    return (
+        <div className="counter">
+            <button className="counter--minus" onClick={subtract}>–</button>
+            <div className="counter--count">
+                <h1>{count}</h1>
+            </div>
+            <button className="counter--plus" onClick={add}>+</button>
+        </div>
+    )
+}
+
