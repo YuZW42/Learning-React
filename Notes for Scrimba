@@ -97,3 +97,15 @@ export default function App() {
     }
             <button onClick={addItem}>Add Item</button>
 
+toggle on/off
+                    function toggleFavorite() {
+        setContact(prevContact => ({
+            ...prevContact,
+            isFavorite: !prevContact.isFavorite
+        }))
+    }
+                    <img 
+                        src={`../images/${starIcon}`} 
+                        className="card--favorite"
+                        onClick={toggleFavorite}
+                    />
